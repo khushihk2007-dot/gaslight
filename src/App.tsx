@@ -5,6 +5,7 @@ import {
   AlertCircle, 
   Heart
 } from 'lucide-react';
+import { Component as MagicCursor } from '@/components/ui/magic-cursor';
 
 interface Message {
   id: string;
@@ -260,6 +261,7 @@ export default function App() {
 
   return (
     <div className={`app-wrapper ${selectedBestie ? `theme-${selectedBestie}` : ''}`}>
+      <MagicCursor />
       {/* GLOBAL HEADER BAR */}
       <header className="global-header">
         <div className="header-brand">
